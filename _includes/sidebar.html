@@ -63,7 +63,7 @@
           {% assign email = site.social.email | split: '@' %}
           javascript:location.href = 'mailto:' + ['{{ email[0] }}','{{ email[1] }}'].join('@')
         {%- elsif entry.type == 'youtube' -%}
-          {{ "/feed.xml" | relative_url }}
+           https://www.youtube.com/channel/UCSY-pfwuYspZFlRsO7vBfIQ
         {%- else -%}
           {{ entry.url }}
         {%- endif -%}
