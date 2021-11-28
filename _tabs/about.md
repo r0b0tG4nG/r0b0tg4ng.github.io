@@ -33,7 +33,7 @@ I'm Saeed Bala Ahmed, a great fan of _“Mr. Robot Series”_ where I got my nic
 
 **> WORK EXPERIENCE**
 
-> CTF Team Lead / Offensive Trainer<br>
+> CTF Team Lead / Offensive Trainer @ Inveteck Global<br>
  Participating in various CTF's and hacking competitions as well as training students is my responsibility at Inveteck Global. As a CTF Team Lead, i have participated and won 6 international hacking competitions and a couple of local competitions too <br>
 
 > Content Developer at Servmor Security<br>
