@@ -20,6 +20,7 @@ I'm Saeed Bala Ahmed, a great fan of _“Mr. Robot Series”_ where I got my nic
 
 > Professional Diploma In Software Engineering<br>
 
+
 **> ACHIEVEMENTS**
 > 15 Exploits Published On Exploit-DB<br>
 <a href="https://www.exploit-db.com/?author=10852"> Verify ExploitDB</a>
@@ -30,6 +31,7 @@ I'm Saeed Bala Ahmed, a great fan of _“Mr. Robot Series”_ where I got my nic
 	=> 2021 Africa Cyber Defense CTF winner. <br>
 	=> 2nd RunnerUp PwnTillDawn Goodwill CTF. <br>
 
+<br>
 
 **> WORK EXPERIENCE**
 
@@ -41,3 +43,15 @@ I'm Saeed Bala Ahmed, a great fan of _“Mr. Robot Series”_ where I got my nic
 
 > Security Researcher / Bug Hunter<br>
  I have been researching to discover and exploit vulnerabilities in web applications. I have discovered T1-T4 bugs on both private and local government web applications. Some of my research findings have been published on exploit-db and a few others under review.
+
+<br>
+
+**> FAVORITE TOOLS**
+
+> Cobalt Strike & Covenant
+
+> Burpsuite & Zap Proxy
+
+> Python & Bash
+
+> Metasploit & Sqlmap
