@@ -28,7 +28,7 @@ The first thing i always do is to try the default login creds on webapps. I trie
 Luckily for us, the default `admin:admin` worked and we logged in succesfully.<br>
 ![image](https://user-images.githubusercontent.com/67085453/143771218-f4d9d7bf-0fb8-4199-90b9-0281d43289bc.png)<br>
 
-On the admin dashboard, the version of activemq rnning on the taret is `5.11.1`. We performed a quick google to find any know exploit.<br>
+On the admin dashboard, the version of activemq rnning on the taret is `5.11.1`. We performed a quick google to find any known exploit.<br>
 ![image](https://user-images.githubusercontent.com/67085453/143771230-8430ca4d-2bf9-45d1-bb9e-bbbe5a968b57.png)<br>
 
 We found a approved exploit from <a href="https://www.rapid7.com/db/modules/exploit/windows/http/apache_activemq_traversal_upload/">rapid7</a>. <br>
