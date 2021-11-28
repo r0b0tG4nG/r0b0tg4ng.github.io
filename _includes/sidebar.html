@@ -62,7 +62,7 @@
         {%- elsif entry.type == 'email' -%}
           {% assign email = site.social.email | split: '@' %}
           javascript:location.href = 'mailto:' + ['{{ email[0] }}','{{ email[1] }}'].join('@')
-        {%- elsif entry.type == 'rss' -%}
+        {%- elsif entry.type == 'youtube' -%}
           {{ "/feed.xml" | relative_url }}
         {%- else -%}
           {{ entry.url }}
