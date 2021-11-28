@@ -7,7 +7,7 @@ order: 4
 
 **> WHOAMI**
 
-I am a Saeed Bala Ahmed, a great fan of _"Mr Robot Series"_ where i got my nickname **r0b0tG4nG**. I am a security researcher in Tenikese Tech Solutions from Ghana. With a strong passion for penetration testing, bug hunting, CTF’s & other security-related topics. I spend most of my time pwning vulnerable systems on [EchoCTF.Red](https://echoctf.red/profile/5630024 "EchoCTF Profile"), [PwnTillDawn](https://online.pwntilldawn.com/Achievements/2101 "PwnTillDawn Profile"), [HackTheBox](https://app.hackthebox.com/profile/234268 "HackTheBox Profile") & [Proving Grounds](https://www.offensive-security.com/labs/ "Proving Grounds"). 
+I'm Saeed Bala Ahmed, a great fan of _“Mr. Robot Series”_ where I got my nickname **r0b0tG4nG**. I am an offensive security engineer with over 4 years of experience with government and private cybersecurity contractors. I currently work at Tenikese Tech Solutions as a Penetration tester. I have a strong passion for penetration testing, bug hunting, CTF’s & other security-related topics. I spend most of my time pwning vulnerable systems on [EchoCTF.Red](https://echoctf.red/profile/5630024 "EchoCTF Profile"), [PwnTillDawn](https://online.pwntilldawn.com/Achievements/2101 "PwnTillDawn Profile"), [HackTheBox](https://app.hackthebox.com/profile/234268 "HackTheBox Profile") & [Proving Grounds](https://www.offensive-security.com/labs/ "Proving Grounds"). 
 
 
 **> CERTIFICATIONS**
@@ -21,7 +21,8 @@ I am a Saeed Bala Ahmed, a great fan of _"Mr Robot Series"_ where i got my nickn
 > Professional Diploma In Software Engineering<br>
 
 **> ACHIEVEMENTS**
-> 15 Exploits Published On Exploit-DB
+> 15 Exploits Published On Exploit-DB<br>
+<a href="https://www.exploit-db.com/?author=10852"> Verify ExploitDB</a>
 
 > 6x International Hacking Competitions Winner.<br>
 	=> 2x BCA CTF Winner. <br>
