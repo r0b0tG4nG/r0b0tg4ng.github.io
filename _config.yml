@@ -23,10 +23,10 @@ title: r0b0tG4nG                          # the main title
 tagline: Your Regular IT Guy | OSCP |   # it will display as the sub-title
 
 description: >-                        # used by seo meta and the atom feed
- A personal blog where i will talk about most of
+ A personal blog where i will share most of
  my findings, tricks and techniques used in compromising 
  systems as well as some cool commands that will aid you 
- in your engangement
+ in your engangement.
 
 # fill in the protocol & hostname for your site, e.g., 'https://username.github.io'
 url: ''
