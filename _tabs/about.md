@@ -13,7 +13,7 @@ I am a Saeed Bala Ahmed, a great fan of _"Mr Robot Series"_ where i got my nickn
 **> CERTIFICATIONS**
 
 > Offensive Security Certified Professional (OSCP)<br> 
-<a href="https://www.credly.com/badges/5e8534c3-e0fb-4bfe-9e39-d2f25a0fce50"> Verify OSCP </a><br>
+<a href="https://www.credly.com/badges/5e8534c3-e0fb-4bfe-9e39-d2f25a0fce50"> Verify OSCP </a> <br>
 > Professional Diploma In Software Engineering<br>
 
 > Certified Network Security Specialist<br>
