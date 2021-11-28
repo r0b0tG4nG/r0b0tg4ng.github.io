@@ -5,12 +5,12 @@ order: 4
 ---
 
 
-**> Whoami**
+**> WHOAMI**
 
 I am a Saeed Bala Ahmed, a great fan of _"Mr Robot Series"_ where i got my nickname **r0b0tG4nG**. I am a security researcher in Tenikese Tech Solutions from Ghana. With a strong passion for penetration testing, bug hunting, CTF’s & other security-related topics. I spend most of my time pwning vulnerable systems on [EchoCTF.Red](https://echoctf.red/profile/5630024 "EchoCTF Profile"), [PwnTillDawn](https://online.pwntilldawn.com/Achievements/2101 "PwnTillDawn Profile"), [HackTheBox](https://app.hackthebox.com/profile/234268 "HackTheBox Profile") & [Proving Grounds](https://www.offensive-security.com/labs/ "Proving Grounds"). 
 
 
-**> Certification**
+**> CERTIFICATIONS**
 
 > Offensive Security Certified Professional (OSCP)
 
@@ -19,7 +19,7 @@ I am a Saeed Bala Ahmed, a great fan of _"Mr Robot Series"_ where i got my nickn
 > Certified Network Security Specialist
 
 
-**> Achievements**
+**> ACHIEVEMENTS**
 > 15 Exploits Published On Exploit-DB
 
 > 6x International Hacking Competitions Winner.<br>
