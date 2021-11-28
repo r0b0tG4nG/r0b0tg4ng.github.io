@@ -16,7 +16,7 @@ image:
 
 **> Information Gathering**<br>
 Started with the usual nmap scan and from the scan we can see active ports. port 22 (ssh) & port 30609 (jetty 9.4.27).<br>
-![nmap](https://imgur.com/xj9yFz2)
+![nmap](img/pwn/jnrdev/nmap.png)
 
 <br>
 Upon visiting the web service running on port _30609_, i found a login screen.<br>
