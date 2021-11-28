@@ -1,8 +1,41 @@
 ---
-title: About
+title: r0b0tG4nG's History
 icon: fas fa-info-circle
 order: 4
 ---
 
 
-> **Note**: Add Markdown syntax content to file `_tabs/about.md` and it will show up on this page.
+**> Whoami**
+
+I am a Saeed Bala Ahmed, a great fan of _"Mr Robot Series"_ where i got my nickname **r0b0tG4nG**. I am a security researcher in Tenikese Tech Solutions from Ghana. With a strong passion for penetration testing, bug hunting, CTF’s & other security-related topics. I spend most of my time pwning vulnerable systems on [EchoCTF.Red](https://echoctf.red/profile/5630024 "EchoCTF Profile"), [PwnTillDawn](https://online.pwntilldawn.com/Achievements/2101 "PwnTillDawn Profile"), [HackTheBox](https://app.hackthebox.com/profile/234268 "HackTheBox Profile") & [Proving Grounds](https://www.offensive-security.com/labs/ "Proving Grounds"). 
+
+
+**> Certification**
+
+> Offensive Security Certified Professional (OSCP)
+
+> Professional Diploma In Software Engineering
+
+> Certified Network Security Specialist
+
+
+**> Achievements**
+> 15 Exploits Published On Exploit-DB
+
+> 6x International Hacking Competitions Winner.<br>
+	=> 2x BCA CTF Winner. <br>
+	=> 2x Sans CTF Winner. <br>
+	=> 2021 Africa Cyber Defense CTF winner. <br>
+	=> 2nd RunnerUp PwnTillDawn Goodwill CTF. <br>
+
+
+**> WORK EXPERIENCE**
+
+> CTF Team Lead / Offensive Trainer<br>
+ Participating in various CTF's and hacking competitions as well as training students is my responsibility at Inveteck Global. As a CTF Team Lead, i have participated and won 6 international hacking competitions and a couple of local competitions too <br>
+
+> Content Developer at Servmor Security<br>
+ My duty at Servmor Security was to develop vulnerable labs like that of Hack The Box for cyber security researchers to practice and upgrade their hacking skills. The vulnerabilities included in these practice labs were the OWASP Top 10 vulnerabilities and other custom implemented vulnerabilities to simulate real scenarios. <b>
+
+> Security Researcher / Bug Hunter<br>
+ I have been researching to discover and exploit vulnerabilities in web applications. I have discovered T1-T4 bugs on both private and local government web applications. Some of my research findings have been published on exploit-db and a few others under review.
