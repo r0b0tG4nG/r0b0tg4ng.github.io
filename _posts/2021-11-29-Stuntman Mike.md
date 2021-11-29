@@ -3,7 +3,7 @@ title: Stuntman Mike Writeup PwnTillDawn
 author: r0b0tG4nG
 date: 2021-11-29 13:02:00 
 categories: [Blogging, PwnTillDawn]
-tags: [writeups, exploit-db, ThinVnc, rdp, powershell, nishang]
+tags: [writeups, ssh, hydra, sudo]
 math: true
 mermaid: true
 ---
