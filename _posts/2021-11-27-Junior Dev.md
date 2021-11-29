@@ -3,7 +3,7 @@ title: JuniorDev Writeup PwnTillDawn
 author: r0b0tG4nG
 date: 2021-11-27 11:33:00 +0800
 categories: [Blogging, PwnTillDawn]
-tags: [writeups, jenkins, portfwd, python]
+tags: [writeups, jenkins, portfwd, python, hydra]
 math: true
 mermaid: true
 image:
