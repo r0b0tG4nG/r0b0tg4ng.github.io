@@ -1,7 +1,7 @@
 ---
 title: Elmariachi-PC Writeup PwnTillDawn
-author: r0b0tG4nG
-date: 2021-11-28 
+author: r0b0tG4nG 10:25:00 
+date: 2021-11-29 
 categories: [Blogging, PwnTillDawn]
 tags: [writeups, exploit-db, ThinVnc, rdp, powershell, nishang]
 math: true
