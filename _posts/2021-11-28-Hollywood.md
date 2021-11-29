@@ -8,7 +8,7 @@ math: true
 mermaid: true
 ---
 
-![image](https://user-images.githubusercontent.com/67085453/143771170-b81a10a3-ee70-4748-9d22-a333f4934b5f.png)<br>
+![image](https://user-images.githubusercontent.com/67085453/143771170-b81a10a3-ee70-4748-9d22-a333f4934b5f.png)<br><br>
 
 **> Information Gathering**<br>
 The Default nmap scan showed many active ports on the target. We can see some major ports like `21 (ftp), 25 (smtp), 80 (http), 110 (pop3) 445 (smb), 8080 (tomcat) & 8161 (activemq)`. <br>
@@ -57,7 +57,7 @@ After waiting for sometime for the results of the post module, we realized we co
 This module will bypass` Windows UAC` by hijacking a special key in the `Registry` under the current user hive, and inserting a custom command that will get invoked when the `Windows Event Viewer` is launched. We have successfuly hijacked `C:\Windows\System32\eventvwr.exe` on the target But we are still not administrator. So we will use the `getsystem` command. This comand will use a number of different techniques in attempt to gain SYSTEM level privileges on the target<br>
 ![image](https://user-images.githubusercontent.com/67085453/143771472-beff3526-d40a-4072-badd-7653a1c0e897.png)<br>
 
-The technique worked and we are `NT AUTHORITY\SYSTEM` though the `Named Pipe Impersonation` technique. We have fully compromised this target.<br>
+The technique worked and we are `NT AUTHORITY\SYSTEM` through the `Named Pipe Impersonation` technique. We have fully compromised this target.<br>
 ![image](https://user-images.githubusercontent.com/67085453/143771478-9e61baa0-5704-416a-8d9f-bb14ee0c0963.png)<br>
 
 
