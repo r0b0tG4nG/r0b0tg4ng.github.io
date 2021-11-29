@@ -33,7 +33,7 @@ We can connect to the ssh service using this credential. `ssh mike@10.150.150.16
 On linux environments, whenever i have a shell, there are 2 main things i check. First is the `id` command. This command will tell you who you are on the system and what groups you are part of. The next command is `sudo -l`, What this command does is to check what permissions / rights the system admin (root) has assigned to you in the `/etc/sudoers` file. typing `sudo -l` revealed that mike has the `(ALL : ALL) ALL` permissions.<br>
 ![image](https://user-images.githubusercontent.com/67085453/143872705-3a6b7a62-5c2c-44ad-88d1-fc4510532e88.png)<br>
 
-Since Mike user has `(ALL : ALL) ALL` permissions, the easiest way to elevelate privileges on this target is to type `sudo su root`. Simple and easy we are root user on the target. <br>
+Since Mike user has `(ALL : ALL) ALL` permissions, the easiest way to elevate privileges on this target is to type `sudo su root`. Simple and easy we are root user on the target. <br>
 ![image](https://user-images.githubusercontent.com/67085453/143872727-d2523b02-94ab-403a-8cfc-64c4952abcb7.png)<br>
 
 Reference: <a href="https://online.pwntilldawn.com/">PwnTillDawn Online battlefield</a>
