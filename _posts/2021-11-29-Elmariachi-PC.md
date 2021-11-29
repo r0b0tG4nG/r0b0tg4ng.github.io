@@ -44,4 +44,4 @@ To connect to rdp, i typed the command `xfreerdp /u:desperado /v:10.150.150.69 /
 
 This target does not need post exploitation but to challenge yourself, why don’t you try to spawn a reverse shell on the target and find your way up to `NT AUTHORITY\SYSTEM`. Good luck researcher...:)<br>
 
-Referrence: <a href="https://online.pwntilldawn.com/">PwnTillDawn Online battlefield</a>
+Reference: <a href="https://online.pwntilldawn.com/">PwnTillDawn Online battlefield</a>
