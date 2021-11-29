@@ -8,7 +8,7 @@ math: true
 mermaid: true
 ---
 
-![image](https://user-images.githubusercontent.com/67085453/143771170-b81a10a3-ee70-4748-9d22-a333f4934b5f.png)<br>
+![image](https://user-images.githubusercontent.com/67085453/143771170-b81a10a3-ee70-4748-9d22-a333f4934b5f.png)<br><br>
 
 **> Information Gathering**<br>
 The Default nmap scan showed many active ports on the target. We can see some major ports like `21 (ftp), 25 (smtp), 80 (http), 110 (pop3) 445 (smb), 8080 (tomcat) & 8161 (activemq)`. <br>
