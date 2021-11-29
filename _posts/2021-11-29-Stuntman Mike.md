@@ -3,7 +3,7 @@ title: Stuntman Mike Writeup PwnTillDawn
 author: r0b0tG4nG
 date: 2021-11-29 13:02:00 
 categories: [Blogging, PwnTillDawn]
-tags: [writeups, exploit-db, ThinVnc, rdp, powershell, nishang]
+tags: [writeups, ssh, hydra, sudo]
 math: true
 mermaid: true
 ---
@@ -11,7 +11,7 @@ mermaid: true
 ![image](https://user-images.githubusercontent.com/67085453/143872562-f60e8306-a5d1-4b8a-a830-f2ca304ac945.png)<br><br>
 
 **> Information Gathering**<br>
-Is there a way to attack a system without gathering information? As usual we nee dto fire nmap on the target to find out what ports are open and what services are running on these ports. There are only two ports 22 (ssh) & 8089 (splunkd)<br>
+Is there a way to attack a system without gathering information? As usual we need to fire nmap on the target to find out what ports are open and what services are running on these ports. There are only two ports 22 (ssh) & 8089 (splunkd)<br>
 ![image](https://user-images.githubusercontent.com/67085453/143872579-f4cf8d1e-bd2d-4da6-8875-aff02d034c99.png)<br>
 
 On port `8089` (splunkd), we found nothing juicy. Tried a couple of stufs but none worked. Well it's confusing when the usual attack surface doesn't produce any results.<br>
