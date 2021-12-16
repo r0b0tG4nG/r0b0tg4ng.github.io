@@ -84,7 +84,7 @@ Our external python script works good the next thing we have to do is to read th
 ![image](file read)<br>
 
 Hehehee guess what?? we did it. We are able to read files on the target using `external python scripts`. Fruits of the hunt?? we actually found the credentials in the `web.config` file.
-```shell
+```web.config
         <authentication mode="Forms">
             <forms name="login" loginUrl="/admin">
                 <credentials passwordFormat = "Clear">
