@@ -40,12 +40,10 @@ The queries on the linked server `POO_CONFIG` are running as `internal_user`. To
 
 Bad luck on our side, the user `internal_user` is also not a `sysadmin` on the target. That is not the end remember this target has linked databases so we can try to enumerate the `POO_CONFIG` server to see if it has more links. We can recon on more links using `EXECUTE ('select srvname,isremote from sysservers;') at [COMPATIBILITY\POO_CONFIG];`.<br>
 ![image](https://user-images.githubusercontent.com/67085453/146366129-93d9a1e9-7d5a-4ad1-bdc9-c266f4e62d5e.png)<br>
-<<<<<<< HEAD
+
 
 
 **> Adding SA User**<br>
-=======
->>>>>>> 82660a86937180fc6fb5b9124f640a07818827ec
 
 From the image above, we can see that `POO_CONFIG` is in turn linked to `POO_PUBLIC`, making it a circular link. This is good news to the eyes since we can use nested queries to find out what user we're running as. Let's execute this command `EXEC ('EXEC (''select suser_name();'') at [COMPATIBILITY\POO_PUBLIC]') at [COMPATIBILITY\POO_CONFIG];`.<br>
 ![image](https://user-images.githubusercontent.com/67085453/146366345-e90d8172-c3a7-4b0c-850f-1a1553ccae17.png)<br>
@@ -62,7 +60,6 @@ We now add the `r0b0t` user and also grant him the `sysadmin privileges`. To ach
 
 The command was executed successfully without any errors. We can login to the `mssql` database using the username `r0b0t` & password `P@ssword123`. To achieve this, we will need `impacket-mssqlclient` script with the argument `impacket-mssqlclient r0b0t:'P@ssword123'@10.13.38.11`.<br>
 ![image](https://user-images.githubusercontent.com/67085453/146366926-91d93953-d63f-431f-acb4-305e1f275077.png)<br>
-<<<<<<< HEAD
 
 
 **> File Read Using sp_execute_external_script**<br>
@@ -72,13 +69,11 @@ After a successful login with the `r0b0t` user credentials, we know this user ha
 
 The SQL Server service found to be running as a standard service account. The `IIS web.config` file mostly contains credentials. Our main target now is to grab the contents of this file. We can siimply do this using `xp_cmdshell icacls c:\inetpub\wwwroot\web.config`.<br>
 ![image](read fail)<br>
-=======
->>>>>>> 82660a86937180fc6fb5b9124f640a07818827ec
+
 
 Looks like we do not have permissions to read that file. What could be the problem? `icacls` is blocked on the target or we just lack permissions. So i tried to read other files on the target using the command `xp_cmdshell icacls c:\windows\system32\drivers\etc\hosts`.<br>
 ![image](icals hosts)<br>
 
-<<<<<<< HEAD
 So `icacls` works perfect all we need is to find a new way to read files on the target through `mssql`. After digging around, i found out that there is an `SQL Server feature` called <a href="https://docs.microsoft.com/en-us/sql/relational-databases/system-stored-procedures/sp-execute-external-script-transact-sql?view=sql-server-ver15">sp_execute_external_script</a>. This stored procedure allows us to execute external scripts written in `Ruby` or `Python`. So first we have to enable this procedure to test some python codes. To enable this feature, we will use the command `EXEC sp_configure 'external scripts enabled', 1` and install this configuration with the command `RECONFFIGURE`.<br> 
 ![image](enable scripts)<br>
 
@@ -104,6 +99,3 @@ Hehehee guess what?? we did it. We are able to read files on the target using `e
 
 ```
 
-
-=======
->>>>>>> 82660a86937180fc6fb5b9124f640a07818827ec
