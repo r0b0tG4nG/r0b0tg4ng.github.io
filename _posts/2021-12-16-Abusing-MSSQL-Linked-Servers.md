@@ -8,7 +8,7 @@ math: true
 mermaid: true
 ---
 
-![image]<br><br>
+![image](https://user-images.githubusercontent.com/67085453/146367126-2c4334c7-4664-4581-9ab7-bcc2b0d9da0b.png)<br><br>
 
 
 **> Information Gathering**<br>
