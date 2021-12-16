@@ -1,5 +1,5 @@
 ---
-title: Abusing MSSQL Linked Servers [Adding sa user & File Read]
+title: Abusing MSSQL Linked Servers [ Adding sa user & File Read ]
 author: r0b0tG4nG
 date: 2021-12-16 10:18:00 +0000
 categories: [Blogging, Exploiting]
