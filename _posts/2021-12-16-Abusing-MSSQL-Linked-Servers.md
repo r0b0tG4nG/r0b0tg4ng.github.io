@@ -64,24 +64,23 @@ The command was executed successfully without any errors. We can login to the `m
 
 **> File Read Using sp_execute_external_script**<br>
 
-After a successful login with the `r0b0t` user credentials, we know this user has `sysadmin-level` privileges thus can enable and execute system commands using the `xp_cmdshell` stored procedure. To enable `xp_cmdshell` in `mssqlcient.py`, we will use the command `enable_xp_cmdshell` and install the new configuration using `RECONFIGURE`.We can test code execution using the command `xp_cmdshell whoami`.<b>
-![image](enable cmd shell)<br>
+After a successful login with the `r0b0t` user credentials, we know this user has `sysadmin-level` privileges thus can enable and execute system commands using the `xp_cmdshell` stored procedure. To enable `xp_cmdshell` in `mssqlcient.py`, we will use the command `enable_xp_cmdshell` and install the new configuration using `RECONFIGURE`.We can test code execution using the command `xp_cmdshell whoami`.<br>
+![image](https://user-images.githubusercontent.com/67085453/146375130-72777aea-8a3a-4a93-91ab-7a3bebc1a2e6.png)<br>
 
 The SQL Server service found to be running as a standard service account. The `IIS web.config` file mostly contains credentials. Our main target now is to grab the contents of this file. We can siimply do this using `xp_cmdshell icacls c:\inetpub\wwwroot\web.config`.<br>
-![image](read fail)<br>
-
+![image](https://user-images.githubusercontent.com/67085453/146375013-823bec14-6cc3-4170-a2e4-bd60f15c312e.png)<br>
 
 Looks like we do not have permissions to read that file. What could be the problem? `icacls` is blocked on the target or we just lack permissions. So i tried to read other files on the target using the command `xp_cmdshell icacls c:\windows\system32\drivers\etc\hosts`.<br>
-![image](icals hosts)<br>
+![image](https://user-images.githubusercontent.com/67085453/146374700-0a784fe4-ceb3-47bf-8a74-e75e8bd3fdb7.png)<br>
 
 So `icacls` works perfect all we need is to find a new way to read files on the target through `mssql`. After digging around, i found out that there is an `SQL Server feature` called <a href="https://docs.microsoft.com/en-us/sql/relational-databases/system-stored-procedures/sp-execute-external-script-transact-sql?view=sql-server-ver15">sp_execute_external_script</a>. This stored procedure allows us to execute external scripts written in `Ruby` or `Python`. So first we have to enable this procedure to test some python codes. To enable this feature, we will use the command `EXEC sp_configure 'external scripts enabled', 1` and install this configuration with the command `RECONFFIGURE`.<br> 
-![image](enable scripts)<br>
+![image](https://user-images.githubusercontent.com/67085453/146375288-30077f0f-80f1-4d9b-8d1e-d6c58acd17e6.png)<br>
 
 With the feature enabled, We will build our external script using the python sample located at <a href="https://docs.microsoft.com/en-us/sql/relational-databases/system-stored-procedures/sp-execute-external-script-transact-sql?view=sql-server-ver15">sp_execute_external_script</a> main page. For test purposes, we will look at executing an `external python script` to print out a text on our screen using the command `EXEC sp_execute_external_script @language = N'Python', @script = N'print( "r0b0t Test Print" );';`<br>
-![image](echo)<br>
+![image](https://user-images.githubusercontent.com/67085453/146374831-be485bc8-96a8-4b84-9363-79f30bb30f22.png)<br>
 
 Our external python script works good the next thing we have to do is to read the `web.config` file from `c:\inetpub\wwwroot\` directory. To do this, we will import python `os module` and execute the command `EXEC sp_execute_external_script @language = N'Python', @script = N'import os;os.system("type C:\inetpub\wwwroot\web.config");';`<br>
-![image](file read)<br>
+![image](https://user-images.githubusercontent.com/67085453/146374932-be5d8c9c-eea8-4bee-b2d6-6513b4175c6a.png)<br>
 
 Hehehee guess what?? we did it. We are able to read files on the target using `external python scripts`. Fruits of the hunt?? we actually found the credentials in the `web.config` file.
 ```web.config
