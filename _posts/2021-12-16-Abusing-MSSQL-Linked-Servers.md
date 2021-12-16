@@ -13,7 +13,7 @@ mermaid: true
 
 **> Information Gathering**<br>
 
-Microsoft SQL Server is a <a href="https://en.wikipedia.org/wiki/Relational_database_management_system">relational database management system</a> developed by <a href="https://en.wikipedia.org/wiki/Microsoft">Microsoft</a>. As a database server, it is a software product with the primary function of storing and retrieving data as requested by other software applications—which may run either on the same computer or on another computer across a network (including the Internet).<br>
+Microsoft SQL Server is a <a href="https://en.wikipedia.org/wiki/Relational_database_management_system">relational database management system</a> developed by <a href="https://en.wikipedia.org/wiki/Microsoft">Microsoft</a>. As a database server, it is a software product with the primary function of storing and retrieving data as requested by other software applications which may run either on the same computer or on another computer across a network (including the Internet).<br>
 
 Impacket is a collection of Python classes for working with network protocols. Impacket is focused on providing low-level programmatic access to the packets and for some protocols (e.g. SMB1-3 and MSRPC) the protocol implementation itself. Packets can be constructed from scratch, as well as parsed from raw data, and the object oriented API makes it simple to work with deep hierarchies of protocols. The library provides a set of tools as examples of what can be done within the context of this library. More Information can be found at <a href="https://github.com/SecureAuthCorp/impacket">
 SecureAuth Corporation</a><br>
