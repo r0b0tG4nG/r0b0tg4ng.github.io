@@ -8,23 +8,24 @@ math: true
 mermaid: true
 ---
 
-![image](sqli general)
+![image](https://user-images.githubusercontent.com/67085453/146534410-1abcfb45-ad47-4adf-b54d-637ea41aedd2.png)
 
 **> Information Gathering**<br>
 
 SQL injection aka `SQLi` is a `web security vulnerability` that allows an attacker to interfere with the queries that an application makes to its database. It generally allows an attacker to view data that they are not normally able to retrieve. This might include data belonging to other users, or any other data that the application itself is able to access. In many cases, an attacker can modify or delete this data, causing persistent changes to the application's content or behavior.  More information on <a href="https://portswigger.net/web-security/sql-injection"> PortSwigger</a>
  
 On port 80, we can see an amazing web application that's meant for booking trips. It's safe to assume that this is a travel agent website where one can book a destination to a desired location. The target website appears to have static webpages except the `book-trip.php` page. On this page we are presented with a login form which has 3 fields. `1. Destination`, `2. Adults` & `3. Children`.<br>
-![image](book page)<br>
+![image](https://user-images.githubusercontent.com/67085453/146534457-64377610-eb21-4c71-9928-693096c1a99f.png)<br>
 
 In `SQLi`, there are few characters that are capable of triggering an error in a database. These characters are `*, ', " & a few others`. In this engagement, we will use a single `'` quote to test all fields. It's always best to test one field at a time, so let's put single quote `'` in the `destination field` and capture the request in burpsuite for further testing.<br>
-![image](burpsuite)<br>
+![image](https://user-images.githubusercontent.com/67085453/146534508-19900b99-e551-4608-a2ee-beee590510dd.png)<br>
 
 Pushing the request to `burpsuite forwarder`, and sending the request again, we were able to trigger a `sql error`. From the response in burpsuite, the error displayed is `Message: [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Unclosed quotation mark after the character string ''.` & `Message: [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near ''.`<br>
-![image](error)<br>
+![image](https://user-images.githubusercontent.com/67085453/146534664-ce769aa7-7712-4149-a2bc-cd167c2f1f4c.png)
+<br>
 
 The `destination field` is vulnerable to sql injection. To further exploit this vulnerability, we need to find the number of columns on the target. In `SQL`, the query `Order by` is used to sort the `result-set` in `ascending or descending order.`. To accomplish this, we will modify the data in our request `destination='+order+by+1+--&adults=1&children=1`. Note: we will keep increasing the values till we find the right columns on the target.<br>
-![image](columns)<br>
+![image](https://user-images.githubusercontent.com/67085453/146534570-aea70b24-8a91-45fe-ac13-d07d9b9cc688.png)<br>
 
 The target database has `5 columns` which can be confirmed from the image above. The reason for performing an SQL injection UNION attack is to be able to retrieve the results from an injected query. Generally, the interesting data that you want to retrieve will be in string form, we need to find one or more columns in the original query results whose data type is, or is compatible with, string data. To test this, we will modify our data `destination='+UNION+SELECT+'a',2,3,4,5+--&adults=1&children=1`.  We will keep testing until the `alphabets` we submitted appears in the webapp response.<br>
 ![image](query)<br>
