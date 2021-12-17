@@ -28,15 +28,15 @@ The `destination field` is vulnerable to sql injection. To further exploit this 
 ![image](https://user-images.githubusercontent.com/67085453/146534570-aea70b24-8a91-45fe-ac13-d07d9b9cc688.png)<br>
 
 The target database has `5 columns` which can be confirmed from the image above. The reason for performing an SQL injection UNION attack is to be able to retrieve the results from an injected query. Generally, the interesting data that you want to retrieve will be in string form, we need to find one or more columns in the original query results whose data type is, or is compatible with, string data. To test this, we will modify our data `destination='+UNION+SELECT+'a',2,3,4,5+--&adults=1&children=1`.  We will keep testing until the `alphabets` we submitted appears in the webapp response.<br>
-![image](query)<br>
+![image](https://user-images.githubusercontent.com/67085453/146534844-8ee75f58-78a8-4472-9045-76a10d0a14a1.png)<br>
 
 We found the relevant columns that are suitable for retrieving string data. We have all that we need now the next step is to start extracting information from the database. For starters, let's start with the version of SQL server running on the target. We can achieve this using `destination='+UNION+SELECT+1,'a',(SELECT+@@version),3,4+--&adults=1&children=1`<br>
-![image](version)<br>
+![image](https://user-images.githubusercontent.com/67085453/146534862-13fff3f1-d047-4195-ac8d-cf617f3d2807.png)<br>
 
 We can further enumerate the target database to retrieve information but it's unfortunate i won't dive deep into that. For more information on how to enumerate the database manually, you can check at <a href="https://perspectiverisk.com/mssql-practical-injection-cheat-sheet/">perspectiverisk</a>. For now, let's focus on to enable `xp_cmdshell` on the target.<br>
 
 After trying for some time to enable `xp_cmdshell` manually, i hit a dead-end. I tried all that i know and also followed the steps on both <a href="https://www.mssqltips.com/sqlservertip/1020/enabling-xpcmdshell-in-sql-server/">mssqltips</a> & <a href="https://medium.com/@notsoshant/a-not-so-blind-rce-with-sql-injection-13838026331e">medium.com</a> as well as few others, i failed. I decided to use the automatic method since i know the injection point, it’s easier to do it with `sqlmap`.<br>
-![image](sqlmap)<br>
+![image](https://user-images.githubusercontent.com/67085453/146534917-09c92a28-6a5c-4cfe-a62b-f43254b458f4.png)<br>
 
 Using `sqlmap` didn't do any good. I tried bypassing this feature with some few `sqlmap arguments` but i still failed. Looking at the screenshot above, sqlmap presented us with this error<br> 
 ```shell
@@ -67,7 +67,7 @@ We have all the information we need but another issue pops up. What's the issue?
 <br>
 
 To identify ping requests, we have to start `tcpdump` on my attacker machine to filter `icmp` on ipaddress of our network interface. We can achieve this by typing `sudo tcpdump -i tun0 icmp`  in this case, i am listening on `tun0` interface. Send the `testping T-SQL` request to the target from burpsuite and i received a ping on my machine.<br>
-![image](ping request)<br>
+![image](https://user-images.githubusercontent.com/67085453/146534986-13349439-ead1-4a26-9b33-3d01c7d854bc.png)<br>
 
 
 If we are able to execute a ping request, then we are two steps away from gaining remote code execution on the target. There are many ways to do this but i will stick to the basic 3:
@@ -82,7 +82,7 @@ I will use the second method. First grab netcat windows binary from <a href="htt
 <br>
 
 Start python server on the attacking machine using `python -m SimpleHTTPServer port number` or the py3 method `python3 -m http.server port number` then put this `T-SQL` query in burpsuite and forward the request once again. It worked i got a hit from the target machine. `Nc64.exe` is transferred to `C:\\Windows\\temp\\` directory.<br>
-![image](nc64.exe transfer)<br>
+![image](https://user-images.githubusercontent.com/67085453/146535020-9cff2fb4-4005-45e1-84f1-6d1c2d7067e1.png)<br>
 
 All we need to do now is to parse our `ipaddress` and `port number` to `nc64.exe` in order to gain a reverse connection to the target machine. As usual we have to modify our `T-SQL` query to perform this action. Once done, modify burpsuite data and send request again. <br>
 ```shell
@@ -92,4 +92,4 @@ All we need to do now is to parse our `ipaddress` and `port number` to `nc64.exe
 
 
 Whoop Whoop we got a reverse connection to the target machine. I hope you enjoyed the ride and also discovered something new. Kindly subscribe to my <a href="https://www.youtube.com/channel/UCSY-pfwuYspZFlRsO7vBfIQ"> YouTube channel</a> for more contents<br>
-![image](revserse shell).
+![image](https://user-images.githubusercontent.com/67085453/146535039-fc5cc779-43b1-4f0b-83c6-ad7129b54219.png).
