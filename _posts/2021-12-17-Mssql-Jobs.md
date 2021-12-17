@@ -1,7 +1,7 @@
 ---
 title: Manual SQLi On MSSQL [ Creating Jobs With Mssql ]
 author: r0b0tG4nG
-date: 2021-12-17 13:18:00 +0000
+date: 2021-12-17 10:18:00 +0000
 categories: [Blogging, Exploiting, Web Applications]
 tags: [writeups, sqli, sql injection, burpsuite, shell, xp_cmdshell]
 math: true
