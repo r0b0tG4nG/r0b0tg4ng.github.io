@@ -80,7 +80,6 @@ $pass='ZQ!5t4r'
 $p= ConvertTo-SecureString -AsPlainText $pass -force
 $cred=New-Object System.Management.Automation.PSCredential -ArgumentList $user,$p
 ```
-<br>
 
 ![image](https://user-images.githubusercontent.com/67085453/149358621-d2409d18-8cbb-497a-86ed-434add3a3487.png)<br>
 
@@ -100,7 +99,6 @@ $Connect = ConvertTo-SecureString -AsPlainText $Password -Force
 $Auth = New-Object System.Management.Automation.PSCredential -ArgumentList $Username,$Connect
 Set-DomainUserPassword -Identity mr3ks -Password $Connect -Credential $Auth
 ```
-<br>
 
 ![image](https://user-images.githubusercontent.com/67085453/149358712-4a44c04c-4ece-40de-8acf-b1a96dd91615.png)<br>
 
