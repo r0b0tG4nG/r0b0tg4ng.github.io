@@ -103,7 +103,7 @@ Set-DomainUserPassword -Identity mr3ks -Password $Connect -Credential $Auth
 ![image](https://user-images.githubusercontent.com/67085453/149358712-4a44c04c-4ece-40de-8acf-b1a96dd91615.png)<br>
 
 We encountered no errors that's good news to the eyes. Let's try to connect to the target through the target `IPV6` `Win-RM` service.  To achieve this, i executed `evil-winrm -i targetipv6 -u mr3ks -p 'ZQ!5t4r'`<br>
-![image](https://user-images.githubusercontent.com/67085453/149358731-8f998768-a5e4-4d5a-982b-bc62e01cb4ef.png))<br>
+![image](https://user-images.githubusercontent.com/67085453/149358731-8f998768-a5e4-4d5a-982b-bc62e01cb4ef.png)<br>
 
 
  I hope you enjoyed the ride and also discovered something new. Kindly subscribe to my <a href="https://www.youtube.com/channel/UCSY-pfwuYspZFlRsO7vBfIQ"> YouTube channel</a> for more contents<br>
