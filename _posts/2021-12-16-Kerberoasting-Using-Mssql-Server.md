@@ -1,9 +1,9 @@
 ---
 title: Kerberoasting Using Mssql Server [ Abusing GenericAll ] 
 author: r0b0tG4nG
-date: 2022-01-13 01:33:00 +0000
+date: 2022-01-13 13:33:00 +0000
 categories: [Blogging, Exploiting]
-tags: [writeups, mssql, impacket-mssqlclient, hashcat, xp_cmdshell, powerview, evil-winrm, kerberoast, bloodhound]
+tags: [writeups, mssql, impacket-mssqlclient, hashcat, xp_cmdshell, powerview, evil-winrm, kerberoast, bloodhound, nmap]
 math: true
 mermaid: true
 ---
