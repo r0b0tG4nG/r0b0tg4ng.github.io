@@ -106,5 +106,5 @@ We encountered no errors that's good news to the eyes. Let's try to connect to t
 ![image](https://user-images.githubusercontent.com/67085453/149358731-8f998768-a5e4-4d5a-982b-bc62e01cb4ef.png)<br>
 
 
- I hope you enjoyed the ride and also discovered something new. Kindly subscribe to my <a href="https://www.youtube.com/channel/UCSY-pfwuYspZFlRsO7vBfIQ"> YouTube channel</a> for more contents<br>
+I hope you enjoyed the ride and also discovered something new. Kindly subscribe to my <a href="https://www.youtube.com/channel/UCSY-pfwuYspZFlRsO7vBfIQ"> YouTube channel</a> for more contents<br>
 
