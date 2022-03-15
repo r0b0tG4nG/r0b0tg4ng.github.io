@@ -7,12 +7,12 @@ order: 4
 
 **> WHOAMI**
 
-I'm Saeed Bala Ahmed, a great fan of _“Mr. Robot Series”_ where I got my nickname **r0b0tG4nG**. I am an offensive security engineer with 4 years of experience in the cybersecurity field. I currently work at Data Systems Ltd as a Penetration tester. I have a strong passion for penetration testing, bug hunting, CTF’s & other security-related topics. I spend most of my time pwning vulnerable systems on [EchoCTF.Red](https://echoctf.red/profile/5630024 "EchoCTF Profile"), [PwnTillDawn](https://online.pwntilldawn.com/Achievements/2101 "PwnTillDawn Profile"), [HackTheBox](https://app.hackthebox.com/profile/234268 "HackTheBox Profile") & [Proving Grounds](https://www.offensive-security.com/labs/ "Proving Grounds"). 
+I'm Saeed Bala Ahmed, a great fan of _“Mr. Robot Series”_ where I got my nickname **r0b0tG4nG**. I am an offensive security engineer with 4 years of experience in the cybersecurity field. I currently work at **Offensive Security** as a **Junior Vulnerable Machine Engineer**. I have a strong passion for penetration testing, bug hunting, CTF’s & other security-related topics. I spend most of my time pwning vulnerable systems on [EchoCTF.Red](https://echoctf.red/profile/5630024 "EchoCTF Profile"), [PwnTillDawn](https://online.pwntilldawn.com/Achievements/2101 "PwnTillDawn Profile"), [HackTheBox](https://app.hackthebox.com/profile/234268 "HackTheBox Profile") & [Proving Grounds](https://www.offensive-security.com/labs/ "Proving Grounds").
 
 
 **> CERTIFICATIONS**
 
-> Offensive Security Certified Professional (OSCP)<br> 
+> Offensive Security Certified Professional (OSCP)<br>
 <a href="https://www.credly.com/badges/5e8534c3-e0fb-4bfe-9e39-d2f25a0fce50"> Verify OSCP</a> <br>
 
 > Certified Network Security Specialist<br>
@@ -33,6 +33,9 @@ I'm Saeed Bala Ahmed, a great fan of _“Mr. Robot Series”_ where I got my nic
 
 
 **> WORK EXPERIENCE**
+
+> Penetration Tester at Data Systems LTD<br>
+My duties at Data Systems LTD were not limited to performing penetration tests on computer systems, networks and applications. Creating new testing methods to identify vulnerabilities and conducting security audits and legal cyberattack simulations by designing and utilizing hacking tools to access designated pieces of data during a predetermined time frame.
 
 > CTF Team Lead / Offensive Trainer at Inveteck Global<br>
  Participating in various CTF's and hacking competitions as well as training students is my responsibility at Inveteck Global. As a CTF Team Lead, i have participated and won 6 international hacking competitions and a couple of local competitions too <br>
