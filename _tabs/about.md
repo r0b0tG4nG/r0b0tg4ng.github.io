@@ -30,6 +30,7 @@ I'm Saeed Bala Ahmed, a great fan of _“Mr. Robot Series”_ where I got my nic
 	=> 2x Sans CTF Winner. <br>
 	=> 2021 Africa Cyber Defense CTF winner. <br>
 	=> 2nd RunnerUp PwnTillDawn Goodwill CTF. <br>
+  => 2022 Africa Cyber Defense CTF winner. <br>
 
 
 **> WORK EXPERIENCE**
@@ -49,10 +50,4 @@ My duties at Data Systems LTD were not limited to performing penetration tests o
 
 **> FAVORITE TOOLS**
 
-> Cobalt Strike & Covenant
-
-> Burpsuite & Zap Proxy
-
-> Python & Bash
-
-> Metasploit & Sqlmap
+> hmm 🤔 depends on the job
