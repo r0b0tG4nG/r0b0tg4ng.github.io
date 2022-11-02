@@ -25,7 +25,7 @@ I'm Saeed Bala Ahmed, a great fan of _“Mr. Robot Series”_ where I got my nic
 > 15 Exploits Published On Exploit-DB<br>
 <a href="https://www.exploit-db.com/?author=10852"> Verify Exploit-DB</a>
 
-> 6x International Hacking Competitions Winner.<br>
+> 7x International Hacking Competitions Winner.<br>
 	=> 2x BCA CTF Winner. <br>
 	=> 2x Sans CTF Winner. <br>
 	=> 2021 Africa Cyber Defense CTF winner. <br>
