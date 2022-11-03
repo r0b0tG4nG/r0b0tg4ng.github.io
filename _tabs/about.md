@@ -45,7 +45,7 @@ My duties at Data Systems LTD were not limited to performing penetration tests o
  My duty at Servmor Security was to develop vulnerable labs like that of Hack The Box for cyber security researchers to practice and upgrade their hacking skills. The vulnerabilities included in these practice labs were the OWASP Top 10 vulnerabilities and other custom implemented vulnerabilities to simulate real scenarios. <b>
 
 > Security Researcher / Bug Hunter<br>
- I spend time researching on vulnerabilities related to web applications. I have discovered T1-T4 bugs on both private and local government web applications. Some of my research findings have been published on exploit-db.
+ I spend time researching on vulnerabilities related to web applications. I have discovered T1-T4 bugs on both private and local government web applications. Some of my research findings have been published on exploit-db. 
 
 
 **> FAVORITE TOOLS**
