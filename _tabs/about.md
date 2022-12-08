@@ -12,6 +12,9 @@ I'm Saeed Bala Ahmed, a great fan of _“Mr. Robot Series”_ where I got my nic
 
 **> CERTIFICATIONS**
 
+> Offensive Security Web Assessor (OSWA)<br>
+<a href="https://www.credential.net/adc17253-ba04-46d9-a889-8636573fd674#gs.k4vbg5"> Verify OSWA</a> <br>
+
 > Offensive Security Certified Professional (OSCP)<br>
 <a href="https://www.credly.com/badges/5e8534c3-e0fb-4bfe-9e39-d2f25a0fce50"> Verify OSCP</a> <br>
 
@@ -25,12 +28,13 @@ I'm Saeed Bala Ahmed, a great fan of _“Mr. Robot Series”_ where I got my nic
 > 15 Exploits Published On Exploit-DB<br>
 <a href="https://www.exploit-db.com/?author=10852"> Verify Exploit-DB</a>
 
-> 7x International Hacking Competitions Winner.<br>
+> 8x International Hacking Competitions Winner.<br>
 	=> 2x BCA CTF Winner. <br>
 	=> 2x Sans CTF Winner. <br>
 	=> 2021 Africa Cyber Defense CTF winner. <br>
 	=> 2nd RunnerUp PwnTillDawn Goodwill CTF. <br>
-  => 2022 Africa Cyber Defense CTF winner. <br>
+  	=> 2022 Africa Cyber Defense CTF Winner. <br>
+	=> 2022 PwnTillDawn Africa & Middle East CTF Winner. <br>
 
 
 **> WORK EXPERIENCE**
