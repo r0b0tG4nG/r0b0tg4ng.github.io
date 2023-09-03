@@ -41,16 +41,16 @@ I'm Saeed Bala Ahmed, a great fan of _“Mr. Robot Series”_ where I got my nic
 **> WORK EXPERIENCE**
 
 > Penetration Tester at Data Systems LTD<br>
-My duties at Data Systems LTD were not limited to performing penetration tests on computer systems, networks and applications. Creating new testing methods to identify vulnerabilities and conducting security audits and legal cyberattack simulations by designing and utilizing hacking tools to access designated pieces of data during a predetermined time frame.
+ At Data Systems LTD, my responsibilities extended beyond conducting penetration tests on computer systems, networks, and applications. I also innovated new testing methodologies to uncover vulnerabilities, performed security audits, and executed legal cyberattack simulations. This involved the development and utilization of specialized hacking tools to access specific data within predetermined timeframes. <br>
 
 > CTF Team Lead / Offensive Trainer at Inveteck Global<br>
- Participating in various CTF's and hacking competitions as well as training students is my responsibility at Inveteck Global. As a CTF Team Lead, i have participated and won 6 international hacking competitions and a couple of local competitions too <br>
+ At Inveteck Global, my role involves active participation in various Capture The Flag (CTF) events and hacking competitions, alongside training students. As a CTF Team Lead, I've had the privilege of competing and achieving victory in six international hacking competitions, as well as securing victories in several local competitions. <br>
 
 > Content Developer at Servmor Security<br>
- My duty at Servmor Security was to develop vulnerable labs like that of Hack The Box for cyber security researchers to practice and upgrade their hacking skills. The vulnerabilities included in these practice labs were the OWASP Top 10 vulnerabilities and other custom implemented vulnerabilities to simulate real scenarios. <br>
+ At Servmor Security, my responsibility involved the development of training labs similar to those found on platforms like Hack The Box. These labs were designed to provide cyber security researchers with a practical environment to enhance their hacking skills. The labs encompassed a range of vulnerabilities, including the OWASP Top 10, and incorporated custom-designed vulnerabilities to replicate real-world scenarios. <br>
 
 > Security Researcher / Bug Hunter<br>
- I spend time researching on vulnerabilities related to web applications. I have discovered T1-T4 bugs on both private and local government web applications. Some of my research findings have been published on exploit-db. 
+ I specialize in researching vulnerabilities associated with web applications. My work involves uncovering T1-T4 bugs within a variety of web applications, spanning both private sector and government domains. Some of my research findings have been publicly documented on exploit-db. 
 
 
 **> FAVORITE TOOLS**
