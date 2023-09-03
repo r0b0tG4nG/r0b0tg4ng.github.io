@@ -7,7 +7,7 @@ order: 4
 
 **> WHOAMI**
 
-I'm Saeed Bala Ahmed, a great fan of _“Mr. Robot Series”_ where I got my nickname **r0b0tG4nG**. I am an offensive security engineer with 5 years of experience in the cybersecurity field. I currently work at **Offensive Security** as a **Junior Vulnerable Machine Engineer**. I have a strong passion for penetration testing, bug hunting, CTF’s & other security-related topics. I spend most of my time pwning vulnerable systems on [EchoCTF.Red](https://echoctf.red/profile/5630024 "EchoCTF Profile"), [PwnTillDawn](https://online.pwntilldawn.com/Achievements/2101 "PwnTillDawn Profile"), [HackTheBox](https://app.hackthebox.com/profile/234268 "HackTheBox Profile") & [Proving Grounds](https://www.offensive-security.com/labs/ "Proving Grounds").
+I'm Saeed Bala Ahmed, a devoted enthusiast of the 'Mr. Robot' series, from which I derived my nickname, **r0b0tG4nG**. With 5 years of experience in the cybersecurity field, I currently hold the position of **Vulnerable Machine Engineer** at **Offensive Security**. My profound passion lies in penetration testing, bug hunting, CTFs, and various security-related domains. I devote a significant portion of my time to conquering vulnerable systems on platforms such as [EchoCTF.Red](https://echoctf.red/profile/5630024 "EchoCTF Profile"), [PwnTillDawn](https://online.pwntilldawn.com/Achievements/2101 "PwnTillDawn Profile"), [HackTheBox](https://app.hackthebox.com/profile/234268 "HackTheBox Profile"), and [Proving Grounds](https://www.offensive-security.com/labs/ "Proving Grounds").
 
 
 **> CERTIFICATIONS**
