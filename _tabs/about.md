@@ -7,19 +7,20 @@ order: 4
 
 **> WHOAMI**
 
-I'm Saeed Bala Ahmed, a great fan of _“Mr. Robot Series”_ where I got my nickname **r0b0tG4nG**. I am an offensive security engineer with 4 years of experience in the cybersecurity field. I currently work at **Offensive Security** as a **Junior Vulnerable Machine Engineer**. I have a strong passion for penetration testing, bug hunting, CTF’s & other security-related topics. I spend most of my time pwning vulnerable systems on [EchoCTF.Red](https://echoctf.red/profile/5630024 "EchoCTF Profile"), [PwnTillDawn](https://online.pwntilldawn.com/Achievements/2101 "PwnTillDawn Profile"), [HackTheBox](https://app.hackthebox.com/profile/234268 "HackTheBox Profile") & [Proving Grounds](https://www.offensive-security.com/labs/ "Proving Grounds").
+I'm Saeed Bala Ahmed, a great fan of _“Mr. Robot Series”_ where I got my nickname **r0b0tG4nG**. I am an offensive security engineer with 5 years of experience in the cybersecurity field. I currently work at **Offensive Security** as a **Junior Vulnerable Machine Engineer**. I have a strong passion for penetration testing, bug hunting, CTF’s & other security-related topics. I spend most of my time pwning vulnerable systems on [EchoCTF.Red](https://echoctf.red/profile/5630024 "EchoCTF Profile"), [PwnTillDawn](https://online.pwntilldawn.com/Achievements/2101 "PwnTillDawn Profile"), [HackTheBox](https://app.hackthebox.com/profile/234268 "HackTheBox Profile") & [Proving Grounds](https://www.offensive-security.com/labs/ "Proving Grounds").
 
 
 **> CERTIFICATIONS**
 
-> Offensive Security Web Assessor (OSWA)<br>
-<a href="https://www.credential.net/adc17253-ba04-46d9-a889-8636573fd674#gs.k4vbg5"> Verify OSWA</a> <br>
-
 > Offensive Security Certified Professional (OSCP)<br>
-<a href="https://www.credly.com/badges/5e8534c3-e0fb-4bfe-9e39-d2f25a0fce50"> Verify OSCP</a> <br>
+
+> Offensive Security Web Assessor (OSWA)<br>
+
+> eLearnSecurity Certified Professional Penetration Tester (eCPPTv2)
+
+> eLearnSecurity Web Application Penetration Tester (eWPT)
 
 > Certified Network Security Specialist<br>
-<a href="http://www.credential.net/5a02318c-805d-469f-ba9e-566388cce8dc"> Verify Network Specialist</a>
 
 > Professional Diploma In Software Engineering<br>
 
