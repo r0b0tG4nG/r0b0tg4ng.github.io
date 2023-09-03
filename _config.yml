@@ -20,7 +20,7 @@ timezone: Africa/Accra
 
 title: r0b0tG4nG                        # the main title
 
-tagline: The Regular IT Guy <br> | OSCP | OSWA | eCCPTv2 | eWPT | # it will display as the sub-title
+tagline: The Regular IT Guy <br> | OSCP | OSWA | eCCPTv2 | eWPT # it will display as the sub-title
 
 description: >-                        # used by seo meta and the atom feed
  A friendly blog platform where i'll discuss about
