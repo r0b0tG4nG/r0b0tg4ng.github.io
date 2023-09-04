@@ -8,12 +8,12 @@
   icon: 'fab fa-twitter'
 -
   type: youtube
-  icon: 'fa-brands fa-youtube'
+  icon: 'fab fa-youtube'
   noblank: true            # open link in current tab
 -
   type: rss
   icon: 'fas fa-rss'
-  noblank: true
+  noblank: true 
 
 # Uncomment and complete the url below to enable more contact options
 # -
