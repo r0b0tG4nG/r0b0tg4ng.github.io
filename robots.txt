@@ -1,0 +1,5 @@
+User-agent: *
+
+Disallow: /norobots/
+
+Sitemap: https://r0b0tg4ng.github.io//sitemap.xml
